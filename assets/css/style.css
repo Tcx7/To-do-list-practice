@@ -29,6 +29,7 @@ body {
 .todo-container {
   display: flex;
   justify-content: center;
+
   border-style: solid;
   border-right: 0.1%;
   border-color: black;
@@ -44,9 +45,21 @@ body {
 .userinput-css {
   height: 20%;
   width: 30%;
+  position: relative;
+  left: 18%;
 }
 
 #submit-btn {
+  position: relative;
   height: 20%;
   width: 7%;
+  left: 18%;
+}
+
+.btn-warning {
+  position: relative;
+  height: 20%;
+  right: 19%;
+  top: 20%;
+  width: 30%;
 }
