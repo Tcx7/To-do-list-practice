@@ -33,7 +33,6 @@ function btnClicked() {
     compBtn.innerHTML = "Complete";
     compBtn.classList.add("complete");
     editBtn.innerHTML = "Edit";
-    editBtn.classList.add(`edit-${i}`);
     createDiv.appendChild(editBtn);
     createDiv.appendChild(compBtn);
     createDiv.appendChild(delBtn);
@@ -49,7 +48,6 @@ function btnClicked() {
   createDiv.appendChild(editBtn);
   createDiv.appendChild(compBtn);
   createDiv.appendChild(delBtn); // deleteBtn gets added with the <li></li>
-
   addTodoList.appendChild(createDiv);
   i++;
   userInput.value = "";
