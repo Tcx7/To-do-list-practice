@@ -6,6 +6,7 @@ document.getElementById("submit-btn").addEventListener("click", btnClicked);
 
 function btnClicked() {
   var userInput = document.getElementById("userInput");
+  if (userInput.value.trim() === "") return null;
   var divText = document.createTextNode(userInput.value); //variable to create the value from user input
   var createDiv = document.createElement("li"); //variable to create <div></div>
   createDiv.classList.add(`list-${i}`);
@@ -27,6 +28,7 @@ function btnClicked() {
   //edit below
   editBtn.addEventListener("click", (e) => {
     userInput.focus();
+    if (userInput.value.trim() === "") return null;
     createDiv.textContent = userInput.value;
     delBtn.innerHTML = "Delete"; //stores "Delete" into variable button
     delBtn.classList.add("delete");
